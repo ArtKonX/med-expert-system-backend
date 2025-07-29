@@ -3,10 +3,10 @@ const { db } = require('../../db/db');
 module.exports = QuerySaveResult = (ctx) => {
     try {
 
-        const { symptoms, diagnose, probability, description } = ctx.request.body;
+        const { symptoms, diagnose, probability, description, date } = ctx.request.body;
 
-        db.all('INSERT INTO results (symptoms, diagnose, probability, description) VALUES (?, ?, ?, ?)',
-            [symptoms, diagnose, probability, description])
+        db.all('INSERT INTO results (symptoms, diagnose, probability, description, created_at) VALUES (?, ?, ?, ?, ?)',
+            [symptoms, diagnose, probability, description, date])
 
 
         ctx.status = 200;

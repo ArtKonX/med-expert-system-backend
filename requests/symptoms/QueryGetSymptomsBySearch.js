@@ -14,7 +14,6 @@ module.exports = QueryGetSymptomsBySearch = async (ctx) => {
         } else {
             if (!dubbleList) {
                 symptomsByQ = await db.all('SELECT * FROM symptoms WHERE name LIKE ?', [`%${q}%`])
-                console.log(symptomsByQ)
             } else {
                 const allSymptomsByQ = await db.all('SELECT * FROM symptoms WHERE name LIKE ?', [`%${q}%`])
 

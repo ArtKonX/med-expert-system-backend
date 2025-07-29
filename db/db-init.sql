@@ -28,7 +28,8 @@ CREATE TABLE IF NOT EXISTS results (
     symptoms TEXT NOT NULL,
     diagnose TEXT NOT NULL,
     probability REAL,
-    description TEXT NOT NULL
+    description TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 INSERT OR IGNORE INTO symptoms (name, description, severity, duration) VALUES

@@ -1,5 +1,6 @@
 const getDiseaseOnId = require('../utils/getDiseaseOnId');
 
+// Формируем заключение на основе данных
 module.exports = generateConclusion = async (probabilities, selectedSymptoms) => {
 
     const mainProbability = probabilities[0];
