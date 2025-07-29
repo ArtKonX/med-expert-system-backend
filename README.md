@@ -23,12 +23,12 @@ git clone https://github.com/ArtKonX/med-expert-system-backend.git
 yarn install
 ```
 
-1. Создайте файл .env.local в корне проекта
+3. Создайте файл .env.local в корне проекта
 ```
 FRONTEND_URL=3000
 ```
 
-1. Запуск севрера
+4. Запуск севрера
 ```
 yarn start
 ```
