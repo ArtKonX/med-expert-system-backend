@@ -27,7 +27,7 @@ yarn install
 
 3. Создайте файл .env.local в корне проекта
 ```
-FRONTEND_URL=3000
+FRONTEND_URL=http://localhost:3000
 ```
 
 4. Запуск севрера
